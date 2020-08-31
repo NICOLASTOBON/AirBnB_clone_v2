@@ -7,13 +7,13 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/', strict_slashes=False)
 def hello_route():
     """ Return message """
     return 'Hello HBNB!'
 
 
-@app.route('/hbnb')
+@app.route('/hbnb', strict_slashes=False)
 def message_route():
     """ Return message route /hbnb """
     return 'HBNB'
