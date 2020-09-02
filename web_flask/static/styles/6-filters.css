@@ -62,6 +62,9 @@ button:hover {
     max-height: 300px;
     overflow: scroll;
 }
+.popup::-webkit-scrollbar {
+    display: none;
+}
 .popup ul {
     padding: 0;
     margin-left: 0;
